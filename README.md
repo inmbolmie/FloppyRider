@@ -7,7 +7,9 @@ __This project is currently in Beta stage.__
 
 ## Introduction
 
-This is an ongoing project to create an adapter to be able to use IBM 8-inch Diskette drives with a standard PC floppy controller. I currently have a working prototype capable of reading and writing to Diskette 1 and 2 types on a 51TD disk drive. Further testing will be needed to consider it stable and fully operational.
+This is an ongoing project to create an adapter to be able to use IBM 8-inch Diskette drives with a standard PC floppy controller.
+
+I currently have a working prototype capable of reading, writing and formatting Diskette 1 and 2 types on a 51TD disk drive. Further testing will be needed to consider it stable and fully operational.
 
 This project was inspired by CuriousMarc's video about data recovery from 8-inch floppies. This kind of converter is something Master Ken would have made like in five minutes using a Teensy, in case they wanted to use a genuine IBM Diskette drive in their data recovery adventure.
 
@@ -25,17 +27,17 @@ The adapter hardware is pretty straightforward and can be made cheapily with ver
 * 74LS06
 * 74LS08
 * 74LS74
-* 5x1K resistors
-* 5x4,7K resistors
+* 12x1K resistors
+* 1x4,7K resistor
 
 
 ## Software
 
-You can get the Arduino source code for the ProMicro on the FloppyRider directory.
+You can get the Arduino source code for the ProMicro in the __FloppyRider__ directory. You can program it using the regular Arduino IDE.
 
 ## KiCad Project
 
-You can get the current project files on the KiCad directory. The PCB design has not been validated at this point.
+You can get the current project files in the __KiCad__ directory. The PCB design has not been validated at this point.
 
 ## Operation
 
@@ -68,11 +70,17 @@ The 31SD and 51TD disk drives have pretty hefty power requirements, as you will 
 
 The easier way to get all the required power rails is getting them from the original host hardware where the disk drive is enclosed. For that reason a 36-pin host connector header is provided. Note that the connector sides are mirrored to be able to use it with a cable-to-cable connection. The adapter will be placed as a bridge between the host cable and the disk drive header.
 
-IMAGE
+![pins](./images/pins.JPG)
+
+![connector](./images/connector.JPG)
+
 
 If you have a separated power supply capable of providing the required DC levels you can leave the host header unconnected and provide power via a separate connector. That way something like a separated disk enclosure could be made.
 
-The other 36-pin header will be used with a regular IDC ribbon cable connector to connect it to the disk drive. Note that you won't be able to use the most common 40-pin cables as the available space for the connector in the disk drive is very limited.
+The other 36-pin header will be used with a regular IDC ribbon cable connector to connect it to the disk drive. Note that you won't be _easily_ able to use the most common 40-pin cables as the available space for the connector in the disk drive is very limited.
+
+![connector](./images/connected.JPG)
+
 
 _As the connectors carry a powerful +24V signal, connector orientation is critical and getting it wrong, reversing or misplacing it could damage your hardware._
 
@@ -89,4 +97,4 @@ As currently working on the prototype unit. Subject to further modification
 
 Sample of how the actual PCB could be. Not validated in production examples.
 
-![Diskette](./images/pcb.png)
+![Diskette](./images/pcb2.png)
