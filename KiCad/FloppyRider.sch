@@ -16,13 +16,13 @@ $EndDescr
 $Comp
 L promicro:SPARKFUN_PRO_MICRO B1
 U 1 1 629CB5F1
-P 6900 4000
-F 0 "B1" H 6900 4910 45  0000 C CNN
-F 1 "PROMICRO" H 6900 4826 45  0000 C CNN
-F 2 "promicro:SPARKFUN_PRO_MICRO" H 6900 4800 20  0001 C CNN
-F 3 "" H 6900 4000 50  0001 C CNN
-F 4 "" H 6900 4731 60  0000 C CNN "Field4"
-	1    6900 4000
+P 6800 3850
+F 0 "B1" H 6800 4760 45  0000 C CNN
+F 1 "PROMICRO" H 6800 4676 45  0000 C CNN
+F 2 "promicro:SPARKFUN_PRO_MICRO" H 6800 4650 20  0001 C CNN
+F 3 "" H 6800 3850 50  0001 C CNN
+F 4 "" H 6800 4581 60  0000 C CNN "Field4"
+	1    6800 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -139,28 +139,28 @@ NoConn ~ 9750 2800
 $Comp
 L power:GND #PWR019
 U 1 1 62CDF09C
-P 7650 3450
-F 0 "#PWR019" H 7650 3200 50  0001 C CNN
-F 1 "GND" H 7800 3400 50  0000 C CNN
-F 2 "" H 7650 3450 50  0001 C CNN
-F 3 "" H 7650 3450 50  0001 C CNN
-	1    7650 3450
+P 7550 3300
+F 0 "#PWR019" H 7550 3050 50  0001 C CNN
+F 1 "GND" H 7700 3250 50  0000 C CNN
+F 2 "" H 7550 3300 50  0001 C CNN
+F 3 "" H 7550 3300 50  0001 C CNN
+	1    7550 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 62CE182A
-P 6150 3650
-F 0 "#PWR016" H 6150 3400 50  0001 C CNN
-F 1 "GND" H 6150 3700 50  0000 C CNN
-F 2 "" H 6150 3650 50  0001 C CNN
-F 3 "" H 6150 3650 50  0001 C CNN
-	1    6150 3650
+P 6050 3500
+F 0 "#PWR016" H 6050 3250 50  0001 C CNN
+F 1 "GND" H 6050 3550 50  0000 C CNN
+F 2 "" H 6050 3500 50  0001 C CNN
+F 3 "" H 6050 3500 50  0001 C CNN
+	1    6050 3500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6450 3450
-NoConn ~ 6450 3550
-NoConn ~ 7350 3450
+NoConn ~ 6350 3300
+NoConn ~ 6350 3400
+NoConn ~ 7250 3300
 $Comp
 L power:GND #PWR021
 U 1 1 62CE6079
@@ -342,34 +342,34 @@ $EndComp
 $Comp
 L 74xx:74LS02 U2
 U 1 1 62A62C0C
-P 4000 4000
-F 0 "U2" H 4000 3683 50  0000 C CNN
-F 1 "74LS02" H 4000 3774 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 4000 4000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4000 4000 50  0001 C CNN
-	1    4000 4000
+P 3800 4050
+F 0 "U2" H 3800 3733 50  0000 C CNN
+F 1 "74LS02" H 3800 3824 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3800 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3800 4050 50  0001 C CNN
+	1    3800 4050
 	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS02 U2
 U 2 1 62A6537A
-P 4000 4600
-F 0 "U2" H 4000 4283 50  0000 C CNN
-F 1 "74LS02" H 4000 4374 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 4000 4600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4000 4600 50  0001 C CNN
-	2    4000 4600
+P 3800 4650
+F 0 "U2" H 3800 4333 50  0000 C CNN
+F 1 "74LS02" H 3800 4424 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3800 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3800 4650 50  0001 C CNN
+	2    3800 4650
 	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS02 U2
 U 4 1 62A67DDA
-P 4000 5200
-F 0 "U2" H 4000 4883 50  0000 C CNN
-F 1 "74LS02" H 4000 4974 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 4000 5200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4000 5200 50  0001 C CNN
-	4    4000 5200
+P 3800 5250
+F 0 "U2" H 3800 4933 50  0000 C CNN
+F 1 "74LS02" H 3800 5024 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3800 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3800 5250 50  0001 C CNN
+	4    3800 5250
 	-1   0    0    1   
 $EndComp
 Text Label 5100 1200 0    50   ~ 0
@@ -388,41 +388,41 @@ Text Label 2850 2200 0    50   ~ 0
 drive_b_neg
 Text Label 2850 2750 0    50   ~ 0
 drive_b_neg
-Text Label 4550 3900 0    50   ~ 0
+Text Label 4350 3950 0    50   ~ 0
 drive_b
-Text Label 4550 4500 0    50   ~ 0
+Text Label 4350 4550 0    50   ~ 0
 drive_b
-Text Label 4550 5100 0    50   ~ 0
+Text Label 4350 5150 0    50   ~ 0
 drive_b
 Wire Wire Line
-	4300 3900 4550 3900
+	4100 3950 4350 3950
 Wire Wire Line
-	4550 4500 4300 4500
+	4350 4550 4100 4550
 Wire Wire Line
-	4300 5100 4550 5100
-Text Label 2900 4000 0    50   ~ 0
+	4100 5150 4350 5150
+Text Label 2700 4050 0    50   ~ 0
 8_select_head
-Text Label 2900 4600 0    50   ~ 0
-8_write_erase_gate
+Text Label 2700 4650 0    50   ~ 0
+write_erase_gate
 Wire Wire Line
-	2900 4000 3700 4000
+	2700 4050 3500 4050
 Wire Wire Line
-	3700 4600 2900 4600
+	3500 4650 2700 4650
 Wire Wire Line
-	2900 5200 3700 5200
+	2700 5250 3500 5250
 Text Label 10100 5950 0    50   ~ 0
 write_protected
 Wire Wire Line
-	6450 3650 6350 3650
+	6350 3500 6250 3500
 Wire Wire Line
-	6450 3750 6350 3750
+	6350 3600 6250 3600
 Wire Wire Line
-	6350 3750 6350 3650
-Connection ~ 6350 3650
+	6250 3600 6250 3500
+Connection ~ 6250 3500
 Wire Wire Line
-	6350 3650 6150 3650
+	6250 3500 6050 3500
 Wire Wire Line
-	7350 3550 7500 3550
+	7250 3400 7400 3400
 $Comp
 L Switch:SW_Push SW1
 U 1 1 629F7CD2
@@ -448,20 +448,20 @@ $EndComp
 Wire Wire Line
 	9750 5150 9950 5150
 Wire Wire Line
-	7500 3400 7650 3400
+	7400 3250 7550 3250
 Wire Wire Line
-	7650 3400 7650 3450
+	7550 3250 7550 3300
 Wire Wire Line
-	7500 3400 7500 3550
-Text Label 7550 3650 0    50   ~ 0
+	7400 3250 7400 3400
+Text Label 7450 3500 0    50   ~ 0
 reset
 Wire Wire Line
-	7350 3650 7550 3650
+	7250 3500 7450 3500
 Text Label 8850 5150 0    50   ~ 0
 reset
 Wire Wire Line
 	8850 5150 9350 5150
-Text Label 4550 4700 0    50   ~ 0
+Text Label 4350 4750 0    50   ~ 0
 write_enable
 $Comp
 L 74xx:74LS06 U3
@@ -836,59 +836,59 @@ Wire Wire Line
 	600  4800 1350 4800
 Wire Wire Line
 	1850 2450 2100 2450
-Text Label 5800 3850 0    50   ~ 0
+Text Label 5700 3700 0    50   ~ 0
 step
-Text Label 5800 3950 0    50   ~ 0
+Text Label 5700 3800 0    50   ~ 0
 8_switch_filter
-Text Label 5800 4050 0    50   ~ 0
+Text Label 5700 3900 0    50   ~ 0
 8_access_1
-Text Label 5800 4150 0    50   ~ 0
+Text Label 5700 4000 0    50   ~ 0
 8_access_0
-Text Label 5800 4250 0    50   ~ 0
+Text Label 5700 4100 0    50   ~ 0
 8_inner_tracks
-Text Label 5800 4550 0    50   ~ 0
+Text Label 5700 4400 0    50   ~ 0
 8_index
 $Comp
 L power:VCC #PWR020
 U 1 1 62EC0273
-P 7950 3700
-F 0 "#PWR020" H 7950 3550 50  0001 C CNN
-F 1 "VCC" H 7965 3873 50  0000 C CNN
-F 2 "" H 7950 3700 50  0001 C CNN
-F 3 "" H 7950 3700 50  0001 C CNN
-	1    7950 3700
+P 7850 3550
+F 0 "#PWR020" H 7850 3400 50  0001 C CNN
+F 1 "VCC" H 7865 3723 50  0000 C CNN
+F 2 "" H 7850 3550 50  0001 C CNN
+F 3 "" H 7850 3550 50  0001 C CNN
+	1    7850 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 3750 7950 3750
+	7250 3600 7850 3600
 Wire Wire Line
-	7950 3750 7950 3700
-Text Label 7700 3850 0    50   ~ 0
+	7850 3600 7850 3550
+Text Label 7600 3700 0    50   ~ 0
 disk_chng_rdy_neg
-Text Label 7700 4050 0    50   ~ 0
+Text Label 7600 3900 0    50   ~ 0
 track_0_neg
-Text Label 7500 4450 0    50   ~ 0
+Text Label 7400 4300 0    50   ~ 0
 drive_b
-Text Label 7500 4250 0    50   ~ 0
+Text Label 7400 4100 0    50   ~ 0
 direction
 Wire Wire Line
-	7350 4250 7500 4250
+	7250 4100 7400 4100
 Wire Wire Line
-	7500 4450 7350 4450
+	7400 4300 7250 4300
 Wire Wire Line
-	6450 3950 5800 3950
+	6350 3800 5700 3800
 Wire Wire Line
-	5800 4050 6450 4050
+	5700 3900 6350 3900
 Wire Wire Line
-	6450 4150 5800 4150
+	6350 4000 5700 4000
 Wire Wire Line
-	5800 4350 6450 4350
+	5700 4200 6350 4200
 Wire Wire Line
-	6450 4550 5800 4550
-NoConn ~ 7350 4550
-NoConn ~ 7350 4350
-NoConn ~ 7350 4150
-NoConn ~ 7350 3950
+	6350 4400 5700 4400
+NoConn ~ 7250 4400
+NoConn ~ 7250 4200
+NoConn ~ 7250 4000
+NoConn ~ 7250 3800
 $Comp
 L Connector:Conn_01x05_Male J4
 U 1 1 629DED49
@@ -1063,7 +1063,7 @@ U 1 1 62FDBCB4
 P 800 7150
 F 0 "H1" H 900 7196 50  0000 L CNN
 F 1 "MountingHole" H 900 7105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 800 7150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 800 7150 50  0000 C CNN
 F 3 "~" H 800 7150 50  0001 C CNN
 	1    800  7150
 	1    0    0    -1  
@@ -1074,7 +1074,7 @@ U 1 1 62FE21A6
 P 800 7450
 F 0 "H2" H 900 7496 50  0000 L CNN
 F 1 "MountingHole" H 900 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 800 7450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 800 7450 50  0001 C CNN
 F 3 "~" H 800 7450 50  0001 C CNN
 	1    800  7450
 	1    0    0    -1  
@@ -1085,7 +1085,7 @@ U 1 1 62FE2C32
 P 1650 7150
 F 0 "H3" H 1750 7196 50  0000 L CNN
 F 1 "MountingHole" H 1750 7105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1650 7150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 7150 50  0001 C CNN
 F 3 "~" H 1650 7150 50  0001 C CNN
 	1    1650 7150
 	1    0    0    -1  
@@ -1096,7 +1096,7 @@ U 1 1 62FE363E
 P 1650 7450
 F 0 "H4" H 1750 7496 50  0000 L CNN
 F 1 "MountingHole" H 1750 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1650 7450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 7450 50  0001 C CNN
 F 3 "~" H 1650 7450 50  0001 C CNN
 	1    1650 7450
 	1    0    0    -1  
@@ -1109,18 +1109,18 @@ Wire Wire Line
 	600  5200 1350 5200
 Wire Wire Line
 	600  5300 1350 5300
-Text Label 5800 4450 0    50   ~ 0
+Text Label 5700 4300 0    50   ~ 0
 8_diskette_2_sense
-Text Label 5800 4350 0    50   ~ 0
+Text Label 5700 4200 0    50   ~ 0
 8_write_erase_sense
 Wire Wire Line
-	5800 4250 6450 4250
+	5700 4100 6350 4100
 Wire Wire Line
-	6450 4450 5800 4450
+	6350 4300 5700 4300
 Wire Wire Line
-	7350 3850 7700 3850
+	7250 3700 7600 3700
 Wire Wire Line
-	7350 4050 7700 4050
+	7250 3900 7600 3900
 Text Label 9950 3300 0    50   ~ 0
 motor_b
 Text Label 9950 3100 0    50   ~ 0
@@ -1134,43 +1134,43 @@ NoConn ~ 9750 3200
 $Comp
 L 74xx:74LS74 U4
 U 1 1 62A1A4EC
-P 7050 5750
-F 0 "U4" H 7050 6231 50  0000 C CNN
-F 1 "74LS74" H 7050 6140 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7050 5750 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 7050 5750 50  0001 C CNN
-	1    7050 5750
+P 7400 5750
+F 0 "U4" H 7400 6231 50  0000 C CNN
+F 1 "74LS74" H 7400 6140 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7400 5750 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 7400 5750 50  0001 C CNN
+	1    7400 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 5850 7700 5850
+	7700 5850 8050 5850
 Wire Wire Line
-	6500 5650 6750 5650
-Text Label 5850 5750 0    50   ~ 0
+	6850 5650 7100 5650
+Text Label 6200 5750 0    50   ~ 0
 write_data_neg
 Wire Wire Line
-	5850 5750 6750 5750
-Text Label 2900 5200 0    50   ~ 0
+	6200 5750 7100 5750
+Text Label 2700 5250 0    50   ~ 0
 write_data_neg
-Text Label 7800 5650 0    50   ~ 0
+Text Label 8150 5650 0    50   ~ 0
 8_write_data
 Wire Wire Line
-	7350 5650 7800 5650
-Text Label 7050 6250 0    50   ~ 0
-8_write_erase_gate
+	7700 5650 8150 5650
+Text Label 7400 6250 0    50   ~ 0
+write_erase_gate
 $Comp
 L power:VCC #PWR0102
 U 1 1 62B6B74B
-P 7050 5150
-F 0 "#PWR0102" H 7050 5000 50  0001 C CNN
-F 1 "VCC" H 7065 5323 50  0000 C CNN
-F 2 "" H 7050 5150 50  0001 C CNN
-F 3 "" H 7050 5150 50  0001 C CNN
-	1    7050 5150
+P 7400 5150
+F 0 "#PWR0102" H 7400 5000 50  0001 C CNN
+F 1 "VCC" H 7415 5323 50  0000 C CNN
+F 2 "" H 7400 5150 50  0001 C CNN
+F 3 "" H 7400 5150 50  0001 C CNN
+	1    7400 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 5150 7050 5450
+	7400 5150 7400 5450
 NoConn ~ 6650 700 
 NoConn ~ 6350 900 
 NoConn ~ 6350 1000
@@ -1239,23 +1239,23 @@ Wire Wire Line
 Wire Wire Line
 	8600 800  8600 900 
 Wire Wire Line
-	4300 5300 4550 5300
+	4100 5350 4350 5350
 Wire Wire Line
-	4300 4100 4550 4100
-Text Label 4550 4100 0    50   ~ 0
+	4100 4150 4350 4150
+Text Label 4350 4150 0    50   ~ 0
 head_1_select
-Text Label 4550 5300 0    50   ~ 0
+Text Label 4350 5350 0    50   ~ 0
 write_data
 Wire Wire Line
-	4300 4700 4550 4700
+	4100 4750 4350 4750
 Wire Wire Line
-	6500 5650 6500 6100
+	6850 5650 6850 6100
 Wire Wire Line
-	6500 6100 7700 6100
+	6850 6100 8050 6100
 Wire Wire Line
-	7700 6100 7700 5850
+	8050 6100 8050 5850
 Wire Wire Line
-	7050 6050 7050 6250
+	7400 6050 7400 6250
 Wire Wire Line
 	5100 1200 4950 1200
 Wire Wire Line
@@ -1269,7 +1269,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1950 7550 1950
 Wire Wire Line
-	5800 3850 6450 3850
+	5700 3700 6350 3700
 $Comp
 L power:VCC #PWR023
 U 1 1 629E7594
@@ -1605,4 +1605,37 @@ Wire Wire Line
 	3050 7700 6150 7700
 Wire Wire Line
 	5800 6500 5800 6600
+$Comp
+L power:VCC #PWR0105
+U 1 1 62B6F623
+P 6000 4850
+F 0 "#PWR0105" H 6000 4700 50  0001 C CNN
+F 1 "VCC" H 6015 5023 50  0000 C CNN
+F 2 "" H 6000 4850 50  0001 C CNN
+F 3 "" H 6000 4850 50  0001 C CNN
+	1    6000 4850
+	1    0    0    -1  
+$EndComp
+Text Label 6000 5450 0    50   ~ 0
+8_write_erase_gate
+Text Label 5050 5150 0    50   ~ 0
+write_erase_gate
+Wire Wire Line
+	5050 5150 5700 5150
+Wire Wire Line
+	6000 5350 6000 5450
+Wire Wire Line
+	6000 4850 6000 4950
+$Comp
+L Transistor_BJT:2SC1945 Q1
+U 1 1 62D0DCBB
+P 5900 5150
+F 0 "Q1" H 6092 5196 50  0000 L CNN
+F 1 "SS8050" H 6092 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 5075 50  0001 L CIN
+F 3 "http://rtellason.com/transdata/2sc1945.pdf" H 5900 5150 50  0001 L CNN
+F 4 "C2150" H 5900 5150 50  0001 C CNN "LCSC"
+	1    5900 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
