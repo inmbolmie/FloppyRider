@@ -47,6 +47,7 @@ const int maxTrack = 76;
 
 //Controller state
 int currentTrack = 80;
+int desiredTrack = 80;
 boolean access0 = true;
 boolean access1 = true;
 boolean stepReceived = false;
@@ -98,6 +99,7 @@ void setup() {
   //Move head to track0 to start from known position
   while (currentTrack > 0) {
     move_head_in();
+    desiredTrack--;
     currentTrack--;
   }
 
@@ -111,41 +113,20 @@ void setup() {
 }
 
 void loop() {
-  if (stepReceived) {
+  if (currentTrack != desiredTrack) {
 
-    stepReceived = false;
-    digitalWrite(LED_BUILTIN_RX, !digitalRead(LED_BUILTIN_RX));
-
-    //Check if disk is selected (pcb is hardcoded to drive B as standard for PC floppies
-    boolean disk_selected = !digitalRead(PIN_IN_DRIVE_SELECT_A);
-
-    if (!disk_selected) {
-      if (debug) Serial.println("Disk not selected");
-      return;
-    }
-
-    boolean direction_away = !digitalRead(PIN_IN_DIRECTION_AWAY);
-
-    if (debug) Serial.print("Dir is away: ");
-    if (debug) Serial.println(direction_away, DEC);
-
-    if (!direction_away) {
-      if (currentTrack == 0) {
-        //Seek time is 5ms for a 51TD drive
-        delay(5);
-        return;
+    if (desiredTrack < currentTrack) {
+      if (currentTrack < 77)
+      {
+        move_head_in();
       }
-
-      move_head_in();
       currentTrack--;
 
     } else {
-      if (currentTrack == maxTrack) {
-        delay(5);
-        return;
+      if (currentTrack < 76)
+      {
+        move_head_out();
       }
-
-      move_head_out();
       currentTrack++;
     }
 
@@ -179,7 +160,7 @@ void loop() {
     if (debug) Serial.print("New track: ");
     if (debug) Serial.println(currentTrack, DEC);
 
-    stepReceived = false;
+    digitalWrite(LED_BUILTIN_RX, !digitalRead(LED_BUILTIN_RX));
   }
 
 }
@@ -234,6 +215,21 @@ void move_head_out() {
 }
 
 void step_received() {
-  stepReceived = true;
+  boolean direction_away = !digitalRead(PIN_IN_DIRECTION_AWAY);
+  //Check if disk is selected (pcb is hardcoded to drive B as standard for PC floppies  
+  boolean disk_selected = !digitalRead(PIN_IN_DRIVE_SELECT_A);
+
+  if (!disk_selected) {
+    return;
+  }
+
+  
+  if (direction_away && desiredTrack < 79) {
+    desiredTrack++;
+  } else if (!direction_away && desiredTrack > 0) {
+    desiredTrack--;
+  }
+
+
 
 }
