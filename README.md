@@ -14,7 +14,7 @@ __Second revision (20220624): I have added a transistor to drive the write/erase
 
 This is an ongoing project to create an adapter to be able to use IBM 8-inch Diskette drives with a standard PC floppy controller.
 
-I currently have a working prototype capable of reading, writing and formatting Diskette 1 and 2 types on a 51TD disk drive. Further testing will be needed to consider it stable and fully operational.
+I currently have a working prototype capable of reading, writing and formatting Diskette 1,2 (SD) and 2D (DD) types on a 51TD disk drive. Further testing will be needed to consider it stable and fully operational.
 
 This project was inspired by CuriousMarc's video about data recovery from 8-inch floppies. This kind of converter is something Master Ken would have made like in five minutes using a Teensy, in case they wanted to use a genuine IBM Diskette drive in their data recovery adventure.
 
