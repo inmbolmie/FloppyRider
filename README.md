@@ -1,9 +1,14 @@
 # FloppyRider
 Disk interface adapter to connect an IBM 31SD or 51TD 8-inch disk unit to a standard PC floppy controller
 
+![Diskette](./images/floppyrider.JPG)
+
+
 ![Diskette](./images/IBM_Diskette_1_with_envelope.gif)
 
 __This project is currently in Beta stage.__
+
+__Second revision (20220624): I have added a transistor to drive the write/erase-gate signals on the IBM drive. I have noticed that write/erase-gate have a very low input impedance (90 ohms each, could that be a safety measure to make harder to accidentally drive the signal high?) that is way over-spec for the 74LS logic to drive properly. The prototype worked by pure luck but trying with other 74LS components the signal level was too low to enable the gates so the device was only capable of reading. The solution is to include a transistor to drive that signals up to aceptable levels.__
 
 ## Introduction
 
@@ -29,6 +34,7 @@ The adapter hardware is pretty straightforward and can be made cheapily with ver
 * 74LS74
 * 12x1K resistors
 * 1x4,7K resistor
+* NPN transistor
 
 
 ## Software
