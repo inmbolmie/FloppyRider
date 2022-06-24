@@ -16,6 +16,16 @@ This is an ongoing project to create an adapter to be able to use IBM 8-inch Dis
 
 I currently have a working prototype capable of reading, writing and formatting Diskette 1,2 (SD) and 2D (DD) types on a 51TD disk drive. Further testing will be needed to consider it stable and fully operational.
 
+## Videos
+
+Video showing the adapter in action, here it is used to make an 8-inch diskette MSDOS-bootable:
+
+[Booting MSDOS from an IBM 51TD 8-inch drive](https://www.youtube.com/watch?v=TbLUqG_d6FU)
+
+Using the adapter to image a 33FD-formatted diskette with Imagedisk:
+
+[Imaging on a PC an IBM 8-inch diskette with a 51TD diskette drive, Imagedisk and FloppyRider](https://www.youtube.com/watch?v=4pZ3qMAHVGs)
+
 This project was inspired by CuriousMarc's video about data recovery from 8-inch floppies. This kind of converter is something Master Ken would have made like in five minutes using a Teensy, in case they wanted to use a genuine IBM Diskette drive in their data recovery adventure.
 
 [Fossil Data Part 2: 8-Inch IBM Floppy Data Recovery](https://www.youtube.com/watch?v=5FVwheTVWko)
@@ -45,6 +55,12 @@ You can get the Arduino source code for the ProMicro in the __FloppyRider__ dire
 
 You can get the current project files in the __KiCad__ directory. The PCB design has not been validated at this point.
 
+## Warning about some floppy controllers
+
+It seems that some floppy controllers may ground the signals to the floppy drive when the computer is switched off. If you have a diskettte inserted and engaged when this happens, that can lead to the track where the head is currently positioned to be erased.
+
+If you are working with important media be careful about this, and give power to the 51TD drive only __after__ the computer is switched on, and remove the diskette or the power to the disk drive __before__ the computer is switched off.
+
 ## Operation
 
 These are the main points that need to be carried out for conversion:
@@ -62,7 +78,6 @@ The PC floppy adresses tracks by a "direction" and "step" signal, and gets a "tr
 #### Write data signal.
 
 The PC floppy write data signal generates a full pulse (falling and rising edge) for each magnetic flux transition that needs to be recorded on the disk surface, while in the IBM interface the "write data" signal records a magnetic flux transition for each signal level change (rising or falling edge). The conversion is made via the 74LS74 flip-flop.
-
 
 
 ## Connection
